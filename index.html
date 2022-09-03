@@ -765,7 +765,6 @@
       var video = document.getElementById("myVideo");
       var btn = document.getElementById("myBtn");
       video.play();
-
       function myFunction() {
         if (video.paused) {
           video.play();
@@ -775,9 +774,14 @@
           btn.innerHTML = "Play";
         }
       }
+      
+      $(document).ready(function() {
+         video.play();
+      })
     </script>
     <script type="text/javascript">
       $(document).ready(function() {
+         video.play();
         $(".list-link").click(function() {
           $(".modal-exp .modal-title").html($(this).data('title'));
           $(".modal-exp .paragraph").html($(this).data('text'));
